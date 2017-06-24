@@ -1,0 +1,14 @@
+{
+  "name": "cordova-plugin-navigation",
+  "version": "1.0.0",
+  "description": "navigation plugin for cordova",
+  "main": "navigation.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "navigation"
+  ],
+  "author": "lixiang",
+  "license": "ISC"
+}
