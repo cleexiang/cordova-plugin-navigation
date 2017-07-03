@@ -28,7 +28,7 @@
     <license>Apache 2.0</license>
     <keywords>cordova,navigation</keywords>
     <js-module src="www/navigation.js" name="Navigation">
-        <clobbers target="navigation" />
+        <clobbers target="Navigation" />
     </js-module>
     
     <!-- android -->
