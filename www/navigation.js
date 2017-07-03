@@ -7,7 +7,7 @@ var Navigation = {
 		exec(null, null, "Navigation", "redirect", [url]);
 	}
 	deepLinkRedirect: function(url) {
-		exec(null, null, "Navigation". "deepLinkRedirect", "hybrid://119/detail")
+		exec(null, null, "Navigation". "deepLinkRedirect", [url])
 	}
 };
 
