@@ -6,6 +6,9 @@ var Navigation = {
 	redirect: function(url) {
 		exec(null, null, "Navigation", "redirect", [url]);
 	}
+	deepLinkRedirect: function(url) {
+		exec(null, null, "Navigation". "deepLinkRedirect", "hybrid://119/detail")
+	}
 };
 
 module.exports = Navigation;

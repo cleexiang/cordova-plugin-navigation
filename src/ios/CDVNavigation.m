@@ -35,4 +35,26 @@
     result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
     [self.commandDelegate sendPluginResult:result callbackId:command.callbackId];
 }
+
+/**
+ Navigation.deepLinkRedirect({
+    url: 'hybrid://119/detail',
+    title: 'Detal',
+    params: {
+ 
+    }
+ });
+ * 参数1：模块名
+ * 参数2：参数
+ */
+- (void)deepLinkRedirect:(CDVInvokedUrlCommand *)command {
+    CDVPluginResult *result;
+    NSString *urlString = [command.arguments objectAtIndex:0];
+    NSURL *url = [NSURL URLWithString:urlString];
+    NSString *host = url.host;
+    NSString *path = url.path;
+    NSLog(@"host: %@, path: %@", host, path);
+    [self.commandDelegate sendPluginResult:result callbackId:command.callbackId];
+}
+
 @end

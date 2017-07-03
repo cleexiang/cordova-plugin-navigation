@@ -16,5 +16,6 @@
 - (void)goBack:(CDVInvokedUrlCommand *)command;
 /** 跳转到某个界面*/
 - (void)redirect:(CDVInvokedUrlCommand *)command;
-
+/** 跳转到外部模块的某个界面 */
+- (void)deepLinkRedirect:(CDVInvokedUrlCommand *)command;
 @end
